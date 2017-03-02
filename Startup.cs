@@ -59,7 +59,7 @@ namespace w08a
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-
+            context.Database.Migrate();
             DummyData.Initialize(context);
         }
     }
